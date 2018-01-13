@@ -1,0 +1,15 @@
+Package: errorist
+Title: Automatically Search Errors or Warnings
+Version: 0.0.1
+Authors@R: c(person("James", "Balamuta", 
+                     email = "balamut2@illinois.edu", role = c("aut", "cre")))
+Description: This package provides shims to obtain errors and warnings that
+    occur during execution of code to automatically search the contents.
+Depends: R (>= 3.0.0)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Imports: searcher
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
+Remotes: coatless/searcher
