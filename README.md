@@ -74,9 +74,9 @@ if (interactive()) {
 
 The idea for `errorist` came from a conversation among [Dirk
 Eddelbuettel](http://dirk.eddelbuettel.com), [Barry
-Rowlingson](http://barry.rowlingson.com), and myself musing about the
-having compilers provide a link explaining what the error meant and how
-to solve it. This conversation was sprouted due to the mouse overtext of
+Rowlingson](http://barry.rowlingson.com), and myself musing about having
+compilers provide a link explaining what the error meant and how to
+solve it. This conversation was sprouted due to the mouse overtext of
 [XKCD Comic 1185: Ineffective Sorts](https://xkcd.com/1185/).
 
 > StackSort connects to StackOverflow, searches for ‘sort a list’, and
