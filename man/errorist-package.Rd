@@ -12,6 +12,14 @@ occur during execution of code to automatically search the contents.
 \details{
 By default, \code{errorist} searches Google for both warnings and errors.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/coatless/errorist}
+  \item Report bugs at \url{https://github.com/coatless/errorist/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: James Balamuta \email{balamut2@illinois.edu}
 
