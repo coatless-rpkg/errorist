@@ -1,12 +1,18 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Travis-CI Build
-Status](https://travis-ci.org/coatless/errorist.svg?branch=master)](https://travis-ci.org/coatless/errorist)[![CRAN
-RStudio mirror
-downloads](http://cranlogs.r-pkg.org/badges/errorist)](http://www.r-pkg.org/pkg/errorist)[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/errorist)](https://cran.r-project.org/package=errorist)
-
 # errorist
+
+[![Project Status: Active - The project has reached a stable, usable
+state and is being actively
+developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Travis-CI Build
+Status](https://travis-ci.org/coatless/errorist.svg?branch=master)](https://travis-ci.org/coatless/errorist)
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/errorist)](https://cran.r-project.org/package=errorist)
+[![CRAN RStudio mirror
+downloads](http://cranlogs.r-pkg.org/badges/errorist)](http://www.r-pkg.org/pkg/errorist)
+[![Coverage
+Status](https://img.shields.io/codecov/c/github/coatless/errorist/master.svg)](https://codecov.io/github/coatless/errorist?branch=master)
 
 > *errorist*: one who holds to and propagates error
 > 
