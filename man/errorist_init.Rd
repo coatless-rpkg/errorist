@@ -6,8 +6,9 @@
 \title{Enable or Disable Errorist's Automatic Search}
 \usage{
 enable_errorist(error_search_func = getOption("errorist.warning",
-  search_google), warning_search_func = getOption("errorist.warning",
-  search_google))
+  searcher::search_google),
+  warning_search_func = getOption("errorist.warning",
+  searcher::search_google))
 
 disable_errorist()
 }

@@ -47,8 +47,8 @@
 #' }
 #' @export
 #' @rdname errorist_init
-enable_errorist = function(error_search_func = getOption("errorist.warning", search_google),
-                           warning_search_func = getOption("errorist.warning", search_google)) {
+enable_errorist = function(error_search_func = getOption("errorist.warning", searcher::search_google),
+                           warning_search_func = getOption("errorist.warning", searcher::search_google)) {
 
   enable_error_shim(error_search_func)
   enable_warning_shim(warning_search_func)
@@ -63,7 +63,7 @@ disable_errorist = function() {
 
 
 warning_handler = function(search_func =
-                             getOption("errorist.warning", search_google)) {
+                             getOption("errorist.warning", searcher::search_google)) {
   # Write trigger as a closure with the required four inputs
   #
   # @param expression the S-language expression for the top-level task.
@@ -148,17 +148,16 @@ warning_handler = function(search_func =
 #' disable_warning_shim()
 #' }
 #' @rdname shims
-#' @importFrom searcher search_google
 #' @export
 enable_warning_shim = function(warning_search_func =
-                                 getOption("errorist.warning", search_google)) {
+                                 getOption("errorist.warning", searcher::search_google)) {
   disable_warning_shim()
 
   # No warning messages yet (we hope!)
   .errorist_env$captured_last_search_warning = NA
 
   # Automatically call the warning_handler after each R function is run
-  addTaskCallback(warning_handler(warning_search_func),
+  handler = addTaskCallback(warning_handler(warning_search_func),
                   name = "ErroristWarningHandler")
 
 }
@@ -170,13 +169,13 @@ disable_warning_shim = function() {
   .errorist_env$captured_last_search_warning = NULL
 
   # Remove handler
-  removeTaskCallback("ErroristWarningHandler")
+  removed_handler = removeTaskCallback("ErroristWarningHandler")
 }
 
 #' @rdname shims
 #' @export
 enable_error_shim = function(error_search_func =
-                               getOption("errorist.error", search_google)) {
+                               getOption("errorist.error", searcher::search_google)) {
   # Remove the shim if it exists...
   disable_error_shim()
 
