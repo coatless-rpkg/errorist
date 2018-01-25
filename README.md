@@ -104,7 +104,8 @@ support for errors that occurred at runtime.
     and remarks about functionality.
   - [Brodie Gaslam](http://www.brodieg.com/) for pointing out
     [`addTaskCallback()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/taskCallback.html)
-    as a way to create a warning handler.
+    as a way to create a warning handler and for a brief discussion on
+    “call” objects.
   - [Joshua Ulrich](http://www.joshuaulrich.com/) for advise on
     incorporating the semi-documented
     [`last.warning`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/warning.html)
