@@ -6,3 +6,4 @@
 ^codecov\.yml$
 ^docs
 ^cran-comments\.md$
+^README\.Rmd$
