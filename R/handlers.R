@@ -195,7 +195,6 @@ disable_error_shim = function() {
   # Restore options
   if (exists("op", envir = .errorist_env) &&
       is.null(.errorist_env$op)) {
-    break
   } else if ("error" %in% names(.errorist_env$op)) {
     options(.errorist_env$op)
   } else {
