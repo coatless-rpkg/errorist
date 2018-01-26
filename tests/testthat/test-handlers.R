@@ -42,7 +42,6 @@ test_that("Verify options are set.", {
 })
 
 
-
 test_that("Check Output from Functions", {
 
   enable_errorist()
