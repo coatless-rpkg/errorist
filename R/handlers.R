@@ -192,9 +192,13 @@ enable_error_shim = function(error_search_func =
 #' @rdname shims
 #' @export
 disable_error_shim = function() {
+
   # Restore options
   if (exists("op", envir = .errorist_env) &&
       is.null(.errorist_env$op)) {
+
+    # Empty if condition...
+
   } else if ("error" %in% names(.errorist_env$op)) {
     options(.errorist_env$op)
   } else {
