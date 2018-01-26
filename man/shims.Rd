@@ -47,7 +47,10 @@ triggers an error.
 }
 
 \examples{
-\dontrun{
+
+# Disable the errorist hooks if already loaded
+disable_errorist()
+
 # Default setup
 enable_warning_shim()
 
@@ -57,13 +60,31 @@ enable_warning_shim()
 disable_warning_shim()
 
 # Specify a search function
-enable_warning_shim(search_func = searcher::search_google)
+enable_warning_shim(warning_search_func = searcher::search_google)
 
 # Some code ...
 
 # Remove the shim
 disable_warning_shim()
-}
+
+# Disable the errorist hooks if already loaded
+disable_errorist()
+
+# Enable only the error shim
+enable_error_shim()
+
+# Some code ...
+
+# Remove the shim
+disable_error_shim()
+
+# Specify a search function
+enable_error_shim(error_search_func = searcher::search_google)
+
+# Some code ...
+
+# Remove the shim
+disable_error_shim()
 }
 \seealso{
 \code{\link[base:addTaskCallback]{base::addTaskCallback()}}

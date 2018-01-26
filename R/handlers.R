@@ -19,7 +19,10 @@
 #'          [disable_error_shim()], [disable_warning_shim()]
 #' @author James Joseph Balamuta
 #' @examples
-#' \dontrun{
+#'
+#' # Disable errorist mode if already engaged.
+#' disable_errorist()
+#'
 #' ### Default search engine is Google
 #'
 #' # Enable automatic search
@@ -44,7 +47,6 @@
 #' # Disable automatic search
 #' # NB: This is done automatically on package unload via "detach()"
 #' disable_errorist()
-#' }
 #' @export
 #' @rdname errorist_init
 enable_errorist = function(error_search_func = getOption("errorist.warning", searcher::search_google),
@@ -130,7 +132,10 @@ warning_handler = function(search_func =
 #' @seealso [base::addTaskCallback()]
 #' @author James Joseph Balamuta
 #' @examples
-#' \dontrun{
+#'
+#' # Disable the errorist hooks if already loaded
+#' disable_errorist()
+#'
 #' # Default setup
 #' enable_warning_shim()
 #'
@@ -140,13 +145,12 @@ warning_handler = function(search_func =
 #' disable_warning_shim()
 #'
 #' # Specify a search function
-#' enable_warning_shim(search_func = searcher::search_google)
+#' enable_warning_shim(warning_search_func = searcher::search_google)
 #'
 #' # Some code ...
 #'
 #' # Remove the shim
 #' disable_warning_shim()
-#' }
 #' @rdname shims
 #' @export
 enable_warning_shim = function(warning_search_func =
@@ -174,6 +178,26 @@ disable_warning_shim = function() {
 
 #' @rdname shims
 #' @export
+#' @examples
+#'
+#' # Disable the errorist hooks if already loaded
+#' disable_errorist()
+#'
+#' # Enable only the error shim
+#' enable_error_shim()
+#'
+#' # Some code ...
+#'
+#' # Remove the shim
+#' disable_error_shim()
+#'
+#' # Specify a search function
+#' enable_error_shim(error_search_func = searcher::search_google)
+#'
+#' # Some code ...
+#'
+#' # Remove the shim
+#' disable_error_shim()
 enable_error_shim = function(error_search_func =
                                getOption("errorist.error", searcher::search_google)) {
   # Remove the shim if it exists...

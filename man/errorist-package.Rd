@@ -6,8 +6,8 @@
 \alias{errorist-package}
 \title{errorist: Automatically Search Errors or Warnings}
 \description{
-This package provides shims to obtain errors and warnings that
-occur during execution of code to automatically search the contents.
+Provides environment hooks that obtain errors and warnings which
+occur during the execution of code to automatically search for solutions.
 }
 \details{
 By default, \code{errorist} searches Google for both warnings and errors.
