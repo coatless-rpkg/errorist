@@ -34,9 +34,6 @@ wish to disable warnings or error individually, please use either
 }
 \examples{
 
-# Disable errorist mode if already engaged.
-disable_errorist()
-
 ### Default search engine is Google
 
 # Enable automatic search
