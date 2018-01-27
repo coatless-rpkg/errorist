@@ -51,7 +51,6 @@
 #' @rdname errorist_init
 enable_errorist = function(error_search_func = getOption("errorist.warning", searcher::search_google),
                            warning_search_func = getOption("errorist.warning", searcher::search_google)) {
-
   enable_error_shim(error_search_func)
   enable_warning_shim(warning_search_func)
 }
@@ -162,7 +161,7 @@ enable_warning_shim = function(warning_search_func =
 
   # Automatically call the warning_handler after each R function is run
   handler = addTaskCallback(warning_handler(warning_search_func),
-                  name = "ErroristWarningHandler")
+                            name = "ErroristWarningHandler")
 
 }
 
@@ -216,11 +215,9 @@ enable_error_shim = function(error_search_func =
 #' @rdname shims
 #' @export
 disable_error_shim = function() {
-
   # Restore options
   if (exists("op", envir = .errorist_env) &&
       is.null(.errorist_env$op)) {
-
     # Empty if condition...
 
   } else if ("error" %in% names(.errorist_env$op)) {
