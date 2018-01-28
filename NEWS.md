@@ -2,7 +2,7 @@
 
 - Created shims for warning and error handling
 - Automatically load and unload shims alongside package calls.
-- Added coverage tests for detecting verifying handler setup and for 
+- Added coverage tests to verify the present of the handlers and for 
   checking the contents of the error handler.
 
 # Special Thanks
