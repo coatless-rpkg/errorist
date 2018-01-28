@@ -1,0 +1,40 @@
+---
+title: "Working with the errorist package"
+author: "JJB"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Working with the errorist package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+The `errorist` package is designed to provide support for newcomers to _R_ who
+are learning how to write code. Philosophically, `errorist` takes the position
+of being as invisible as possible. To achieve the invisibility, on package load,
+handlers to receive error and warning message are automatically created and applied.
+These handlers propogate the messages raised by _R_ into the
+[`searcher`](https://CRAN.R-project.org/package=searcher) package, which
+automatically searches the contents on [Google](https://google.com/) by default.
+
+Thus, to use `errorist` in a causal manner, please type:
+
+```{r}
+library(errorist)
+```
+
+To remove the `errorist` handlers, please either call
+the `disable_errorist()` function or detach the package. 
+
+```{r}
+detach("package:errorist", unload = TRUE)
+```
+
