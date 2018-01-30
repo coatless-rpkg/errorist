@@ -1,6 +1,6 @@
 Package: errorist
 Title: Automatically Search Errors or Warnings
-Version: 0.0.1
+Version: 0.0.1.1000
 Authors@R: c(person("James", "Balamuta", 
                      email = "balamut2@illinois.edu", role = c("aut", "cre")))
 Description: Provides environment hooks that obtain errors and warnings which

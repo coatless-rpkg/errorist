@@ -1,11 +1,17 @@
+# errorist 0.0.1.1000
+
+_in progress_
+
 # errorist 0.0.1
+
+## Features
 
 - Created shims for warning and error handling
 - Automatically load and unload shims alongside package calls.
-- Added coverage tests to verify the present of the handlers and for 
+- Added coverage tests to verify the presence of the handlers and for 
   checking the contents of the error handler.
 
-# Special Thanks
+## Special Thanks
 
 This package exists in large part due to conversations or assistance from
 the following folks:
