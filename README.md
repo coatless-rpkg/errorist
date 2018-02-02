@@ -75,8 +75,8 @@ search handlers as an option in your `.Rprofile`:
 # Add custom options
 .First <- function() {
   options(
-    errorist.warning = searcher::google,
-    errorist.error = searcher::google
+    errorist.warning = searcher::search_google,
+    errorist.error = searcher::search_google
   )
 }
 
