@@ -172,6 +172,7 @@ disable_warning_shim = function() {
   removed_handler = removeTaskCallback("ErroristWarningHandler")
 }
 
+#' @importFrom searcher search_google
 #' @rdname shims
 #' @export
 #' @examples
