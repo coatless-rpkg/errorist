@@ -1,6 +1,12 @@
-# errorist 0.0.1.1000
+# errorist 0.0.2
 
-_in progress_
+## Bugfixes
+
+- Imported the `search_google` function from `searcher` to satisfy `R CMD check`.
+
+## Test Infrastructure
+
+- Enable the use of two cores to speed up Travis-CI builds.
 
 # errorist 0.0.1
 

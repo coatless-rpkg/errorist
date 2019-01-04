@@ -7,7 +7,7 @@
 \title{errorist: Automatically Search Errors or Warnings}
 \description{
 Provides environment hooks that obtain errors and warnings which
-occur during the execution of code to automatically search for solutions.
+    occur during the execution of code to automatically search for solutions.
 }
 \details{
 By default, \code{errorist} searches Google for both warnings and errors.
@@ -21,6 +21,6 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: James Balamuta \email{balamut2@illinois.edu}
+\strong{Maintainer}: James Balamuta \email{balamut2@illinois.edu} (0000-0003-2826-8458) [copyright holder]
 
 }
