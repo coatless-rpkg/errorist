@@ -9,18 +9,16 @@
 Provides environment hooks that obtain errors and warnings which
     occur during the execution of code to automatically search for solutions.
 }
-\details{
-By default, \code{errorist} searches Google for both warnings and errors.
-}
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/coatless/errorist}
-  \item Report bugs at \url{https://github.com/coatless/errorist/issues}
+  \item \url{https://github.com/r-assist/errorist}
+  \item Report bugs at \url{https://github.com/r-assist/errorist/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: James Balamuta \email{balamut2@illinois.edu} (0000-0003-2826-8458) [copyright holder]
+\strong{Maintainer}: James Balamuta \email{balamut2@illinois.edu} (\href{https://orcid.org/0000-0003-2826-8458}{ORCID}) [copyright holder]
 
 }
+\keyword{internal}

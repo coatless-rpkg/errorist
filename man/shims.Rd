@@ -7,13 +7,15 @@
 \alias{disable_error_shim}
 \title{Enable and Disable Warning or Error Capture}
 \usage{
-enable_warning_shim(warning_search_func = getOption("errorist.warning",
-  searcher::search_google))
+enable_warning_shim(
+  warning_search_func = getOption("errorist.warning", searcher::search_google)
+)
 
 disable_warning_shim()
 
-enable_error_shim(error_search_func = getOption("errorist.error",
-  searcher::search_google))
+enable_error_shim(
+  error_search_func = getOption("errorist.error", searcher::search_google)
+)
 
 disable_error_shim()
 }
