@@ -5,10 +5,10 @@
 \alias{disable_errorist}
 \title{Enable or Disable Errorist's Automatic Search}
 \usage{
-enable_errorist(error_search_func = getOption("errorist.warning",
-  searcher::search_google),
-  warning_search_func = getOption("errorist.warning",
-  searcher::search_google))
+enable_errorist(
+  error_search_func = getOption("errorist.warning", searcher::search_google),
+  warning_search_func = getOption("errorist.warning", searcher::search_google)
+)
 
 disable_errorist()
 }
