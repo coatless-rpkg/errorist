@@ -9,9 +9,6 @@
 Provides environment hooks that obtain errors and warnings which
     occur during the execution of code to automatically search for solutions.
 }
-\details{
-By default, \code{errorist} searches Google for both warnings and errors.
-}
 \seealso{
 Useful links:
 \itemize{
@@ -24,3 +21,4 @@ Useful links:
 \strong{Maintainer}: James Balamuta \email{balamut2@illinois.edu} (\href{https://orcid.org/0000-0003-2826-8458}{ORCID}) [copyright holder]
 
 }
+\keyword{internal}
