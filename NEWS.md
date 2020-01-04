@@ -1,6 +1,12 @@
+# errorist 0.1.0
+
+## Features
+
+- TBA
+
 # errorist 0.0.2
 
-## Bugfixes
+## Fixes
 
 - Imported the `search_google` function from `searcher` to satisfy `R CMD check`.
 
