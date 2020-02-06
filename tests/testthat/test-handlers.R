@@ -53,15 +53,11 @@ test_that("Check Output from Functions", {
   # Retrieve the function
   test_error_function = test_error_call[[1]]
 
-  # Retrieve function name space
-  # See: https://stackoverflow.com/a/6433626/1345455
-  get_function_namespace = function(func) { getNamespaceName(environment(func)) }
-
   expect_true(is.function(options_default_function),
               "Verify the default error handler is a function.")
 
-  expect_true(get_function_namespace(test_error_function) ==
-                get_function_namespace(options_default_function) ,
+  expect_true(identical(environment(test_error_function),
+                        environment(options_default_function)),
               "Verify that test function call matches the default function's environment")
 
   expect_equal(test_error_function("toad"), options_default_function("toad"),

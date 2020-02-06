@@ -1,8 +1,9 @@
-# errorist 0.1.0
+# errorist 0.0.3
 
-## Features
+## Bug Fix
 
-- TBA
+- Address an erroneous unit test that was comparing functions within namespaces
+  instead of environments.
 
 # errorist 0.0.2
 
