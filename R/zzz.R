@@ -1,6 +1,16 @@
+# Package Environment
+.errorist_env = new.env()
+
+# Retrieve settings on load
+setup_errorist_environment = function() {
+  .errorist_env$op = options()
+  .errorist_env$warn_level = getOption("warn", 0)
+}
+
 .onAttach = function(libname, pkgname) {
 
   autoload_config = getOption("errorist.autoload", TRUE)
+  setup_errorist_environment()
 
   if(!is.logical(autoload_config)) {
 
