@@ -1,10 +1,11 @@
 # Package Environment
 .errorist_env = new.env()
+.errorist_env$warn_level = 0
 
 # Retrieve settings on load
 setup_errorist_environment = function() {
   .errorist_env$op = options()
-  .errorist_env$warn_level = getOption("warn", 0)
+  .errorist_env$warn_level =  getOption("warn", 0)
 }
 
 .onAttach = function(libname, pkgname) {
