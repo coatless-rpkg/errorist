@@ -171,6 +171,7 @@ disable_warning_shim = function() {
   # Reset the warning
   .errorist_env$captured_last_search_warning = NULL
 
+  print(.errorist_env$warn_level)
   # Restore original warning level
   options("warn" = .errorist_env$warn_level)
 
