@@ -1,6 +1,14 @@
+# errorist 0.0.3.9000
+
+## Fixes
+
+- Ensured the `last.warning` object was created by setting `options('warn' = 0)`,
+  which is the default value. Upon unload, the warning level is restored to
+  the old value.
+  
 # errorist 0.0.3
 
-## Bug Fix
+## Fixes
 
 - Address an erroneous unit test that was comparing functions within namespaces
   instead of environments.

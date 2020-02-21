@@ -1,6 +1,3 @@
-# Package Environment
-.errorist_env = new.env()
-
 #' Enable or Disable Errorist's Automatic Search
 #'
 #' Activates or disengages the automatic look up of error or warning codes in
@@ -156,6 +153,12 @@ enable_warning_shim = function(warning_search_func =
   # No warning messages yet (we hope!)
   .errorist_env$captured_last_search_warning = NA
 
+  # Restore to default setting to ensure `last.warning` is created.
+  warn_level = getOption("warn", 0)
+  if (warn_level != 0) {
+    options("warn" = 0)
+  }
+
   # Automatically call the warning_handler after each R function is run
   handler = addTaskCallback(warning_handler(warning_search_func),
                             name = "ErroristWarningHandler")
@@ -167,6 +170,9 @@ enable_warning_shim = function(warning_search_func =
 disable_warning_shim = function() {
   # Reset the warning
   .errorist_env$captured_last_search_warning = NULL
+
+  # Restore original warning level
+  options("warn" = .errorist_env$warn_level)
 
   # Remove handler
   removed_handler = removeTaskCallback("ErroristWarningHandler")
@@ -197,9 +203,6 @@ enable_error_shim = function(error_search_func =
   # Remove the shim if it exists...
   disable_error_shim()
 
-  # Save present options
-  .errorist_env$op = options()
-
   # Errorist
   op.errorist = list(error = error_search_func)
 
@@ -210,17 +213,13 @@ enable_error_shim = function(error_search_func =
 #' @rdname shims
 #' @export
 disable_error_shim = function() {
-  # Restore options
-  if (exists("op", envir = .errorist_env) &&
-      is.null(.errorist_env$op)) {
-    # Empty if condition...
 
-  } else if ("error" %in% names(.errorist_env$op)) {
+  # Restore options
+  if ("error" %in% names(.errorist_env$op)) {
     options(.errorist_env$op)
   } else {
     # Ensure error is nullified.
     options(error = NULL)
   }
 
-  .errorist_env$op = NULL
 }
