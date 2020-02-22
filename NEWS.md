@@ -1,10 +1,19 @@
-# errorist 0.0.3.9000
+# errorist 0.1.0
+
+## Feature
+
+- When multiple warnings occur, each unique warning is searched separately
+  instead of searching only the latest value. ([#9](https://github.com/r-assist/errorist/pull/9),
+  closing ([#8](https://github.com/r-assist/errorist/issues/7)))
 
 ## Fixes
 
+- Warning messages now have their locale specific prefix. 
+  ([#9](https://github.com/r-assist/errorist/pull/9))
+
 - Ensured the `last.warning` object was created by setting `options('warn' = 0)`,
   which is the default value. Upon unload, the warning level is restored to
-  the old value.
+  the old value. ([#8](https://github.com/r-assist/errorist/pull/8))
   
 # errorist 0.0.3
 
