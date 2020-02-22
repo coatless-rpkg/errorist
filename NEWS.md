@@ -4,7 +4,7 @@
 
 - When multiple warnings occur, each unique warning is searched separately
   instead of searching only the latest value. ([#9](https://github.com/r-assist/errorist/pull/9),
-  closing ([#8](https://github.com/r-assist/errorist/issues/7)))
+  closing ([#7](https://github.com/r-assist/errorist/issues/7)))
 
 ## Fixes
 
