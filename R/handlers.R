@@ -59,6 +59,43 @@ disable_errorist = function() {
 }
 
 
+warning_msg_format = function(x = warnings()) {
+  # Retrieve the error message
+  warning_messages = names(x)
+  # Retrieve the call location for the error
+  # E.g. fun(1, 2) : this is a warning
+  warning_calls = as.character(x)
+
+  # Set default sep value
+  sep_val = ": "
+
+  # Build a traditional warning string
+  combined_warning = paste(warning_calls, warning_messages, sep = sep_val)
+
+  # Format string by removing instances of NULL
+  missing_call = which(warning_calls == "NULL")
+  if (length(missing_call)) {
+    # Compute number of characters to drop
+    call_drop = nchar(paste0("NULL", sep_val)) + 1L
+
+    # Remove NULL in string.
+    combined_warning[missing_call] =
+      substr(combined_warning[missing_call],
+             call_drop,
+             nchar(combined_warning[missing_call]))
+  }
+
+  # Determine number of warnings
+  n = length(combined_warning)
+
+  # Ensure a localized warning is given.
+  translated_warning_prefix = ngettext(n, "Warning message:\n", "Warning messages:\n")
+
+  # Return fixed warning string
+  paste0(translated_warning_prefix, combined_warning)
+}
+
+
 warning_handler = function(search_func =
                              getOption("errorist.warning", searcher::search_google)) {
   # Write trigger as a closure with the required four inputs
@@ -74,22 +111,23 @@ warning_handler = function(search_func =
   # see https://developer.r-project.org/TaskHandlers.pdf
   function(expr, value, ok, visible) {
     # Determines if a warning was triggered
-    last_warning_value = get0("last.warning", envir = baseenv())
+    last_warning_value = warnings()
 
     if (!is.null(last_warning_value)) {
-      warning_contents =  names(last_warning_value)[1]
+      warning_contents = warning_msg_format(last_warning_value)
     } else {
-      warning_contents =  NA
+      warning_contents = NA
     }
 
     # Trigger search with added protections since this caller is repeatedly
     # called regardless if a new warning is detected.
     if (!is.na(warning_contents) &&
-        (
-          is.na(.errorist_env$captured_last_search_warning) ||
-          .errorist_env$captured_last_search_warning != warning_contents
-        )) {
-      search_func(warning_contents)
+        (is.na(.errorist_env$captured_last_search_warning) ||
+        .errorist_env$captured_last_search_warning != warning_contents)
+        ) {
+      for (warning_msg in warning_contents) {
+        search_func(warning_msg)
+      }
     }
 
     # Update last warning
