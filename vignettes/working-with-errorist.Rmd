@@ -74,15 +74,16 @@ many_warnings = function() {
 }
 ```
 
-This function when run will issue exactly **four warnings**. However, only
-three of these warnings are unique. Thus, there will be exactly **three**
-searches performed after the function finishes its execution. 
+When run, the `many_warnings()` function will issue exactly **four warnings**. 
+However, only three of these warnings are unique. Thus, there will be exactly 
+**three** searches performed after the function finishes its execution. As a
+result, the output will be like:
 
 ```{r, echo = FALSE}
 message("Warning messages:")
 message("1: In many_warnings() : First warning")
 message("2: In many_warnings() : Second warning")
-message("3: In many_warnings() : Third warning")
+message("3: In many_warnings() : Random warning")
 message("Searching query in a web browser ... ")
 message("Searching query in a web browser ... ")
 message("Searching query in a web browser ... ")
