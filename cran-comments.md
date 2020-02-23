@@ -8,6 +8,8 @@
 
 0 errors | 0 warnings | 0 note
 
+- This is a resubmit to fix a randomly dying link in the README file.
+
 ## Reverse dependencies
 
 There are no reverse dependencies.
