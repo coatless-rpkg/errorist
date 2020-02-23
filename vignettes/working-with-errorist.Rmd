@@ -1,10 +1,10 @@
 ---
-title: "Working with the errorist package"
-author: "JJB"
+title: "Workflow while using the errorist package"
+author: "James Joseph Balamuta"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Working with the errorist package}
+  %\VignetteIndexEntry{Workflow while using the errorist package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Overview
 
 The `errorist` package is designed to provide support for newcomers to _R_ who
 are learning how to write code. Philosophically, `errorist` takes the position
@@ -25,7 +26,10 @@ These handlers propogate the messages raised by _R_ into the
 [`searcher`](https://CRAN.R-project.org/package=searcher) package, which
 automatically searches the contents on [Google](https://google.com/) by default.
 
-Thus, to use `errorist` in a causal manner, please type:
+
+## Usage 
+
+To use `errorist` in a causal manner, please type:
 
 ```{r}
 library(errorist)
@@ -36,5 +40,51 @@ the `disable_errorist()` function or detach the package.
 
 ```{r}
 detach("package:errorist", unload = TRUE)
+```
+
+## Error Search
+
+During development, many issues can arise. With `errorist` enabled, each 
+error is automatically searched. For instance, if we typed a function that
+wasn't defined, we'd get: 
+
+```r
+f()
+```
+
+```{r, echo = FALSE}
+message('Error in f() : could not find function "f"')
+message('Searching query in a web browser ... ')
+```
+
+## Warning Search
+
+Outside of errors, the second most common issue is receiving **warnings**.
+Warnings only indicate a recoverable issue has occurred during a function run. 
+As a result, there can be many warnings that build up during an estimation routine.
+If `errorist` is enabled, each unique warning will automatically be searched
+within its own tab in the browser. As an example, consider the following function:
+
+```r
+many_warnings = function() {
+  warning("First warning")
+  warning("Second warning")
+  warning("Random warning")
+  warning("Random warning")
+}
+```
+
+This function when run will issue exactly **four warnings**. However, only
+three of these warnings are unique. Thus, there will be exactly **three**
+searches performed after the function finishes its execution. 
+
+```{r, echo = FALSE}
+message("Warning messages:")
+message("1: In many_warnings() : First warning")
+message("2: In many_warnings() : Second warning")
+message("3: In many_warnings() : Third warning")
+message("Searching query in a web browser ... ")
+message("Searching query in a web browser ... ")
+message("Searching query in a web browser ... ")
 ```
 
