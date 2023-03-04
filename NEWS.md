@@ -1,3 +1,18 @@
+# errorist 0.1.1
+
+## Fixes
+
+- Switched insertion shiv `message()` to `packageStartupMessage()`
+  ([#11](https://github.com/r-assist/errorist/pull/11))
+
+- Removed `LazyData: true` from `DESCRIPTION`
+  ([#11](https://github.com/r-assist/errorist/pull/11))
+
+## Deployment
+
+- Updated to the latest version of `r-lib` GitHub actions. 
+  ([#11](https://github.com/r-assist/errorist/pull/11))
+
 # errorist 0.1.0
 
 ## Feature
