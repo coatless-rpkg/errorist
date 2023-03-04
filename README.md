@@ -5,9 +5,8 @@
 
 <!-- badges: start -->
 
-[![R build
-status](https://github.com/r-assist/errorist/workflows/R-CMD-check/badge.svg)](https://github.com/r-assist/errorist/actions)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/errorist)](https://cran.r-project.org/package=errorist)
+[![R-CMD-check](https://github.com/r-assist/errorist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/r-assist/errorist/actions/workflows/R-CMD-check.yaml)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/errorist)](https://cran.r-project.org/package=errorist)
 [![CRAN RStudio mirror
 downloads](http://cranlogs.r-pkg.org/badges/errorist)](http://www.r-pkg.org/pkg/errorist)
 [![Coverage
@@ -15,7 +14,7 @@ Status](https://img.shields.io/codecov/c/github/r-assist/errorist/master.svg)](h
 <!-- badges: end -->
 
 > *errorist*: one who holds to and propagates error
-> 
+>
 > — [Merriam
 > Webster](https://www.merriam-webster.com/dictionary/errorist)
 
@@ -61,12 +60,12 @@ messages is Google.
 You can specify a different search engine handler by setting default
 values:
 
-  - `errorist.warning`: Warning search engine portal. The default is
-    `searcher::search_google`.
-  - `errorist.error`: Error search engine portal. The default is
-    `searcher::search_google`.
-  - `errorist.autoload`: Automatically search errors. The default is
-    `TRUE`.
+- `errorist.warning`: Warning search engine portal. The default is
+  `searcher::search_google`.
+- `errorist.error`: Error search engine portal. The default is
+  `searcher::search_google`.
+- `errorist.autoload`: Automatically search errors. The default is
+  `TRUE`.
 
 If frequent use of the package occurs, consider adding the different
 search handlers as an option in your `.Rprofile`:
@@ -107,19 +106,19 @@ support for errors that occurred at runtime.
 
 # Special Thanks
 
-  - [Dirk Eddelbuettel](http://dirk.eddelbuettel.com) for starting the
-    discussion on [XKCD Comic 1185: Ineffective
-    Sorts](https://xkcd.com/1185/).
-  - [Barry Rowlingson](http://barry.rowlingson.com) for the package name
-    and remarks about functionality.
-  - [Brodie Gaslam](http://www.brodieg.com/) for pointing out
-    [`addTaskCallback()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/taskCallback.html)
-    as a way to create a warning handler and for a brief discussion on
-    “call” objects.
-  - [Joshua Ulrich](https://github.com/joshuaulrich/) for advise on
-    incorporating the semi-documented
-    [`last.warning`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/warning.html)
-    object that *R* populates with warning messages.
+- [Dirk Eddelbuettel](http://dirk.eddelbuettel.com) for starting the
+  discussion on [XKCD Comic 1185: Ineffective
+  Sorts](https://xkcd.com/1185/).
+- [Barry Rowlingson](http://barry.rowlingson.com) for the package name
+  and remarks about functionality.
+- [Brodie Gaslam](http://www.brodieg.com/) for pointing out
+  [`addTaskCallback()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/taskCallback.html)
+  as a way to create a warning handler and for a brief discussion on
+  “call” objects.
+- [Joshua Ulrich](https://github.com/joshuaulrich/) for advise on
+  incorporating the semi-documented
+  [`last.warning`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/warning.html)
+  object that *R* populates with warning messages.
 
 # License
 
