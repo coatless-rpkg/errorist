@@ -144,7 +144,7 @@ warning_handler = function(search_func =
 #' @param error_search_func,warning_search_func
 #'        The search function from [`searcher`] that should be called when
 #'        an error or warning occurs. By default, searches are routed through
-#'        [Google](https://google.com/).
+#'        [Google](https://www.google.com/).
 #'
 #' @details
 #' By default, both [enable_warning_shim()] and [enable_error_shim()] functions

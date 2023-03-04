@@ -22,7 +22,7 @@ disable_error_shim()
 \arguments{
 \item{error_search_func, warning_search_func}{The search function from \code{\link{searcher}} that should be called when
 an error or warning occurs. By default, searches are routed through
-\href{https://google.com/}{Google}.}
+\href{https://www.google.com/}{Google}.}
 }
 \description{
 Add or remove a listener to top-level task callbacks that checks for
