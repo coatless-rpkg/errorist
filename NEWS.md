@@ -73,7 +73,7 @@ the following folks:
   on [XKCD Comic 1185: Ineffective Sorts](https://xkcd.com/1185/).
 - [Barry Rowlingson](http://barry.rowlingson.com) for the package name and
   remarks about functionality.
-- [Brodie Gaslam](http://www.brodieg.com/) for pointing out 
+- [Brodie Gaslam](https://www.brodieg.com/) for pointing out 
   [`addTaskCallback()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/taskCallback.html)
   as a way to create a warning handler and for a brief discussion on "call"
   objects.

@@ -6,11 +6,9 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/r-assist/errorist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/r-assist/errorist/actions/workflows/R-CMD-check.yaml)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/errorist)](https://cran.r-project.org/package=errorist)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/errorist)](https://cran.r-project.org/package=errorist)
 [![CRAN RStudio mirror
-downloads](http://cranlogs.r-pkg.org/badges/errorist)](http://www.r-pkg.org/pkg/errorist)
-[![Coverage
-Status](https://img.shields.io/codecov/c/github/r-assist/errorist/master.svg)](https://codecov.io/github/r-assist/errorist?branch=master)
+downloads](https://cranlogs.r-pkg.org/badges/errorist)](https://www.r-pkg.org/pkg/errorist)
 <!-- badges: end -->
 
 > *errorist*: one who holds to and propagates error
@@ -111,7 +109,7 @@ support for errors that occurred at runtime.
   Sorts](https://xkcd.com/1185/).
 - [Barry Rowlingson](http://barry.rowlingson.com) for the package name
   and remarks about functionality.
-- [Brodie Gaslam](http://www.brodieg.com/) for pointing out
+- [Brodie Gaslam](https://www.brodieg.com/) for pointing out
   [`addTaskCallback()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/taskCallback.html)
   as a way to create a warning handler and for a brief discussion on
   “call” objects.
