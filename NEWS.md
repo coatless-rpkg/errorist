@@ -2,10 +2,14 @@
 
 ## Fixes
 
-- Switched insertion shiv `message()` to `packageStartupMessage()`
+- Switched insertion shiv `message()` to `packageStartupMessage()`.
   ([#12](https://github.com/r-assist/errorist/pull/12))
 
-- Removed `LazyData: true` from `DESCRIPTION`
+- Removed `LazyData: true` from `DESCRIPTION`.
+  ([#12](https://github.com/r-assist/errorist/pull/12))
+
+
+- Switched URLs to using `https` instead of `http` and removed broken links.
   ([#12](https://github.com/r-assist/errorist/pull/12))
 
 ## Deployment
