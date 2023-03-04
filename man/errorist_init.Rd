@@ -13,11 +13,7 @@ enable_errorist(
 disable_errorist()
 }
 \arguments{
-\item{error_search_func}{The search function from \code{\link{searcher}} that should be called when
-an error or warning occurs. By default, searches are routed through
-\href{https://google.com}{Google}.}
-
-\item{warning_search_func}{The search function from \code{\link{searcher}} that should be called when
+\item{error_search_func, warning_search_func}{The search function from \code{\link{searcher}} that should be called when
 an error or warning occurs. By default, searches are routed through
 \href{https://google.com}{Google}.}
 }
