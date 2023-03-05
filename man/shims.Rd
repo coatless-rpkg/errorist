@@ -22,7 +22,7 @@ disable_error_shim()
 \arguments{
 \item{error_search_func, warning_search_func}{The search function from \code{\link{searcher}} that should be called when
 an error or warning occurs. By default, searches are routed through
-\href{https://google.com}{Google}.}
+\href{https://www.google.com/}{Google}.}
 }
 \description{
 Add or remove a listener to top-level task callbacks that checks for
@@ -43,7 +43,7 @@ a function for \code{error} in \code{options()}.
 
 
 For the warning shim, a top-level task callback added to the environment
-via \code{\link[base:addTaskCallback]{base::addTaskCallback()}}. This causes the warning handler to fire
+via \code{\link[base:taskCallback]{base::addTaskCallback()}}. This causes the warning handler to fire
 each time a new function call occurs in \emph{R} regardless of whether it
 triggers an error.
 }
@@ -84,7 +84,7 @@ enable_error_shim(error_search_func = searcher::search_google)
 disable_error_shim()
 }
 \seealso{
-\code{\link[base:addTaskCallback]{base::addTaskCallback()}}
+\code{\link[base:taskCallback]{base::addTaskCallback()}}
 }
 \author{
 James Joseph Balamuta

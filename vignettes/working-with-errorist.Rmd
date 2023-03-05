@@ -24,7 +24,7 @@ of being as invisible as possible. To achieve the invisibility, on package load,
 handlers to receive error and warning message are automatically created and applied.
 These handlers propogate the messages raised by _R_ into the
 [`searcher`](https://CRAN.R-project.org/package=searcher) package, which
-automatically searches the contents on [Google](https://google.com/) by default.
+automatically searches the contents on [Google](https://www.google.com/) by default.
 
 
 ## Usage 

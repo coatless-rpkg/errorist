@@ -6,8 +6,7 @@
 \alias{errorist-package}
 \title{errorist: Automatically Search Errors or Warnings}
 \description{
-Provides environment hooks that obtain errors and warnings which
-    occur during the execution of code to automatically search for solutions.
+Provides environment hooks that obtain errors and warnings which occur during the execution of code to automatically search for solutions.
 }
 \seealso{
 Useful links:

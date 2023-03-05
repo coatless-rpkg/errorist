@@ -1,3 +1,22 @@
+# errorist 0.1.1
+
+## Fixes
+
+- Switched insertion shiv `message()` to `packageStartupMessage()`.
+  ([#12](https://github.com/r-assist/errorist/pull/12))
+
+- Removed `LazyData: true` from `DESCRIPTION`.
+  ([#12](https://github.com/r-assist/errorist/pull/12))
+
+
+- Switched URLs to using `https` instead of `http` and removed broken links.
+  ([#12](https://github.com/r-assist/errorist/pull/12))
+
+## Deployment
+
+- Updated to the latest version of `r-lib` GitHub actions. 
+  ([#12](https://github.com/r-assist/errorist/pull/12))
+
 # errorist 0.1.0
 
 ## Feature
@@ -58,7 +77,7 @@ the following folks:
   on [XKCD Comic 1185: Ineffective Sorts](https://xkcd.com/1185/).
 - [Barry Rowlingson](http://barry.rowlingson.com) for the package name and
   remarks about functionality.
-- [Brodie Gaslam](http://www.brodieg.com/) for pointing out 
+- [Brodie Gaslam](https://www.brodieg.com/) for pointing out 
   [`addTaskCallback()`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/taskCallback.html)
   as a way to create a warning handler and for a brief discussion on "call"
   objects.
