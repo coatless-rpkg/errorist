@@ -1,3 +1,17 @@
+# errorist 0.1.2
+
+## Fixes
+
+- Revised the warning check as empty warnings no longer have a `NULL` return.
+  ([#13](https://github.com/coatless-rpkg/errorist/issues/13))
+
+## Deployment
+
+- Added pkgdown website
+  ([#14](https://github.com/coatless-rpkg/errorist/pull/14))
+- Updated to the latest version of `r-lib` GitHub actions. 
+  ([#14](https://github.com/coatless-rpkg/errorist/pull/14))
+
 # errorist 0.1.1
 
 ## Fixes
