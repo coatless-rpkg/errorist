@@ -113,7 +113,7 @@ warning_handler = function(search_func =
     # Determines if a warning was triggered
     last_warning_value = warnings()
 
-    if (!is.null(last_warning_value)) {
+    if (!is.null(last_warning_value) && length(last_warning_value)) {
       warning_contents = warning_msg_format(last_warning_value)
     } else {
       warning_contents = NA
