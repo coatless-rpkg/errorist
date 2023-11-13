@@ -11,8 +11,9 @@ Provides environment hooks that obtain errors and warnings which occur during th
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/r-assist/errorist}
-  \item Report bugs at \url{https://github.com/r-assist/errorist/issues}
+  \item \url{https://github.com/coatless-rpkg/errorist}
+  \item \url{http://r-pkg.thecoatlessprofessor.com/errorist/}
+  \item Report bugs at \url{https://github.com/coatless-rpkg/errorist/issues}
 }
 
 }
