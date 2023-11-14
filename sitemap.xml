@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/404.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/articles/working-with-errorist.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/authors.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/index.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/news/index.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/reference/errorist-package.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/reference/errorist_init.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>http://r-pkg.thecoatlessprofessor.com/errorist/reference/shims.html</loc>
+  </url>
+</urlset>
