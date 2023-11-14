@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/r-assist/errorist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/r-assist/errorist/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/coatless-rpkg/errorist/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/coatless-rpkg/errorist/actions/workflows/R-CMD-check.yaml)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/errorist)](https://cran.r-project.org/package=errorist)
 [![CRAN RStudio mirror
 downloads](https://cranlogs.r-pkg.org/badges/errorist)](https://www.r-pkg.org/pkg/errorist)
