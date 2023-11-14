@@ -35,9 +35,8 @@ install.packages("errorist")
 For the development version, you can opt for:
 
 ``` r
-install.packages("devtools")
-
-devtools::install_github("coatless/errorist")
+if(!requireNamespace("remotes")) { install.packages("remotes") }
+remotes::install_github("coatless-rpkg/errorist")
 ```
 
 ## Usage
