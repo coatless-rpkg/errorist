@@ -12,7 +12,7 @@ Provides environment hooks that obtain errors and warnings which occur during th
 Useful links:
 \itemize{
   \item \url{https://github.com/coatless-rpkg/errorist}
-  \item \url{http://r-pkg.thecoatlessprofessor.com/errorist/}
+  \item \url{https://r-pkg.thecoatlessprofessor.com/errorist/}
   \item Report bugs at \url{https://github.com/coatless-rpkg/errorist/issues}
 }
 
