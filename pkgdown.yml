@@ -3,7 +3,7 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   working-with-errorist: working-with-errorist.html
-last_built: 2023-11-14T00:12Z
+last_built: 2023-11-14T00:36Z
 urls:
   reference: http://r-pkg.thecoatlessprofessor.com/errorist/reference
   article: http://r-pkg.thecoatlessprofessor.com/errorist/articles
