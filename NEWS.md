@@ -1,45 +1,59 @@
+# errorist 0.1.2
+
+## Fixes
+
+- Revised the warning check as empty warnings no longer have a `NULL` return.
+  ([#13](https://github.com/coatless-rpkg/errorist/issues/13))
+
+## Deployment
+
+- Added pkgdown website
+  ([#14](https://github.com/coatless-rpkg/errorist/pull/14))
+- Updated to the latest version of `r-lib` GitHub actions. 
+  ([#14](https://github.com/coatless-rpkg/errorist/pull/14))
+
 # errorist 0.1.1
 
 ## Fixes
 
 - Switched insertion shiv `message()` to `packageStartupMessage()`.
-  ([#12](https://github.com/r-assist/errorist/pull/12))
+  ([#12](https://github.com/coatless-rpkg/errorist/pull/12))
 
 - Removed `LazyData: true` from `DESCRIPTION`.
-  ([#12](https://github.com/r-assist/errorist/pull/12))
+  ([#12](https://github.com/coatless-rpkg/errorist/pull/12))
 
 
 - Switched URLs to using `https` instead of `http` and removed broken links.
-  ([#12](https://github.com/r-assist/errorist/pull/12))
+  ([#12](https://github.com/coatless-rpkg/errorist/pull/12))
 
 ## Deployment
 
 - Updated to the latest version of `r-lib` GitHub actions. 
-  ([#12](https://github.com/r-assist/errorist/pull/12))
+  ([#12](https://github.com/coatless-rpkg/errorist/pull/12))
 
 # errorist 0.1.0
 
 ## Feature
 
 - When multiple warnings occur, each unique warning is searched separately
-  instead of searching only the latest value. ([#9](https://github.com/r-assist/errorist/pull/9),
-  closing ([#7](https://github.com/r-assist/errorist/issues/7)))
+  instead of searching only the latest value. ([#9](https://github.com/coatless-rpkg/errorist/pull/9),
+  closing ([#7](https://github.com/coatless-rpkg/errorist/issues/7)))
 
 ## Fixes
 
 - Warning messages now have their locale specific prefix. 
-  ([#9](https://github.com/r-assist/errorist/pull/9))
+  ([#9](https://github.com/coatless-rpkg/errorist/pull/9))
 
 - Ensured the `last.warning` object was created by setting `options('warn' = 0)`,
   which is the default value. Upon unload, the warning level is restored to
-  the old value. ([#8](https://github.com/r-assist/errorist/pull/8))
+  the old value. ([#8](https://github.com/coatless-rpkg/errorist/pull/8))
   
 - Fixed a spurious URL in README/NEWS.md
   
 ## Documentation
 
 - Improved the package vignette by providing examples of how the handler pick
-  up errors and warnings. ([#10](https://github.com/r-assist/errorist/pull/10))
+  up errors and warnings. ([#10](https://github.com/coatless-rpkg/errorist/pull/10))
 
 
 # errorist 0.0.3

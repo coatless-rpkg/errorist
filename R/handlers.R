@@ -43,9 +43,14 @@
 #' disable_errorist()
 #' @export
 #' @rdname errorist_init
-enable_errorist = function(error_search_func = getOption("errorist.warning", searcher::search_google),
-                           warning_search_func = getOption("errorist.warning", searcher::search_google)) {
-  packageStartupMessage("Warnings and errors will automatically trigger a web search.")
+enable_errorist = function(
+    error_search_func = getOption("errorist.warning", searcher::search_google),
+    warning_search_func = getOption("errorist.warning", searcher::search_google))
+{
+  packageStartupMessage(
+    "Warnings and errors will automatically trigger a web search."
+  )
+
   enable_error_shim(error_search_func)
   enable_warning_shim(warning_search_func)
 }
@@ -113,7 +118,7 @@ warning_handler = function(search_func =
     # Determines if a warning was triggered
     last_warning_value = warnings()
 
-    if (!is.null(last_warning_value)) {
+    if (!is.null(last_warning_value) && length(last_warning_value)) {
       warning_contents = warning_msg_format(last_warning_value)
     } else {
       warning_contents = NA
