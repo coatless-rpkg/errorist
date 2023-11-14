@@ -2,3 +2,18 @@ url: http://r-pkg.thecoatlessprofessor.com/errorist/
 template:
   bootstrap: 5
 
+reference:
+- subtitle: Autorun functions on Package Load and Unload
+  desc: >
+    Automatically enable or disable searching of errors and warning messages.
+  contents:
+  - enable_errorist
+  - disable_errorist
+- subtitle: Behavior Shims
+  desc: >
+    Individually turn on or off searching errors and warning messages.
+  contents:
+  - enable_warning_shim
+  - enable_error_shim
+  - disable_warning_shim
+  - disable_error_shim
