@@ -147,7 +147,7 @@ warning_handler = function(search_func =
 #' whether a new warning or error occurs and then triggers a search browser.
 #'
 #' @param error_search_func,warning_search_func
-#'        The search function from [`searcher`] that should be called when
+#'        The search function from [`searcher::searcher`] that should be called when
 #'        an error or warning occurs. By default, searches are routed through
 #'        [Google](https://www.google.com/).
 #'

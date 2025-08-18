@@ -1,3 +1,10 @@
+# errorist 0.1.3
+
+## Fixes
+
+- Fixed a link inside an Rd file that was missing the package
+  ([#15](https://github.com/coatless-rpkg/errorist/issues/15))
+
 # errorist 0.1.2
 
 ## Fixes

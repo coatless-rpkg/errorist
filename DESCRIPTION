@@ -1,6 +1,6 @@
 Package: errorist
 Title: Automatically Search Errors or Warnings
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: c(
              person("James", "Balamuta", 
                     email = "balamut2@illinois.edu", 
@@ -20,6 +20,6 @@ Suggests: testthat,
     rmarkdown
 License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Roxygen: list(markdown = TRUE)
 VignetteBuilder: knitr
