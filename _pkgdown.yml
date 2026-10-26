@@ -17,3 +17,11 @@ reference:
   - enable_error_shim
   - disable_warning_shim
   - disable_error_shim
+
+navbar:
+  structure:
+    left: [intro, reference, articles, tutorials, news, blog]
+  components:
+    blog:
+      text: Blog posts
+      href: https://blog.thecoatlessprofessor.com/projects/errorist/
